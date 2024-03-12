@@ -711,19 +711,58 @@ color:#434455  ;
   }
   .container-ground {
  display: flex;
- align-items: baseline;
-
+ align-items: center;
+ flex-direction: column;
+ justify-content: center;
+ 
  
   }
+  @media screen and (min-width:768px){
+    .cobtainer-ground{
+      display: flex;
+    align-items: baseline;
+    }
+      
+  }
+  @media screen and (min-width:1158px){
+    
+  }
+
   .logo-text {
  display: table-column;
  align-items: center;
  justify-content: center;
- margin-right: 120px;
+ width: 288px;
+ margin-bottom: 72px;
+
   }
+  @media screen and (min-width:768px){
+    .logo-text {
+      display: table-column;
+ align-items: center;
+ justify-content: center;
+ margin-right: 120px;
+    }
+    }
+      
+  
+  @media screen and (min-width:1158px) {
+
+  }
+    
+
   .ground-logo {
-    display: inline-block;
+    display: flex;
     margin-bottom: 16px; 
+    justify-content: center;
+    
+  }
+  @media screen and (min-width:768px){
+    .ground-logo{
+      display: inline-block;
+    margin-bottom: 16px;  
+    }
+    
   }
   .ground .logo-part {
     color: #F4F4FD;
@@ -738,14 +777,33 @@ color:#434455  ;
     max-width: 264px ;
   }
   .social-list-ground {
-    
+    margin-bottom: 72px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
+  @media screen and (min-width:1158px){
+    .social-list-ground {
+      margin-bottom: 72px;
+  }}
   .social-list {
 display: flex;
 gap: 16px;
 width: 208px;
 height: 40px;
+justify-content: center;
+align-items: center;
   }
+  @media screen and (min-width:1158px) {
+    .social-list {
+      display: flex;
+      gap: 16px;
+      width: 208px;
+      height: 40px;
+        }
+  }
+
   .social-list-item {
     
   }
@@ -783,9 +841,17 @@ margin-bottom: 16px;
 background-color: #31d0aa;
 }
 .subscribe {
-  margin-left: 80px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-
+@media screen and (min-width:1158px){
+  .subscribe {
+    margin-left: 80px;
+  }
+}
 .subscribe-text {
   margin-bottom: 16px;
   font-weight: 500;
@@ -829,16 +895,23 @@ background-color: #31d0aa;
   background-color: #4D5AE5;
   border: none;
   border-radius: 4px;
+ 
 }
-
+@media screen and (min-width:1158px){
+  
+}
 .subscribe-form {
   display: flex;
   gap: 24px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+@media screen and (min-width:1158px) {
+  .subscribe-form {
+    display: flex;
+    gap: 24px;}}
 
-.subscribe-icon {
-  margin-left: 16px;
-}
 
 
 /* Backdrop styles */
