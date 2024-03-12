@@ -517,7 +517,6 @@ letter-spacing: 0.02em;
   /* Our Team */
   .sect-our-team {
     background-color: #F4F4FD;
-    
   }
   .sect-our-team {
 font-weight: 400;
@@ -526,12 +525,24 @@ line-height: 1.5;
 letter-spacing: 0.02em;
   }
   .container-our-team {
+width: 320px;
+
+
 
   }
   .our-team-list {
     display: flex;
-    flex-wrap: wrap;
+   flex-wrap: wrap;
     gap: 24px;
+
+
+
+    /* mob */
+flex-direction: column;
+justify-content: center;
+    
+
+    
   }
   .our-team-item {
     width: calc((100% - 72px)/4);
@@ -540,12 +551,14 @@ letter-spacing: 0.02em;
      box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   }
   .our-team-container-discription {
+   
     border: 1px solid #e7e9fc;
     border-top: none;
     padding-top: 32px;
     padding-bottom: 32px;
    border-radius: 0px, 0px, 4px, 4px;
    text-align: center;
+   
   }
   .sect-our-team-title {
 font-weight: 700;
@@ -556,6 +569,8 @@ text-transform: capitalize;
 color: #2E2F42;
 text-align: center;
 margin-bottom: 72px ;
+
+
 
   }
   .member-name {
