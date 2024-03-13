@@ -199,12 +199,6 @@ fill:#f4f4fd;
       border-bottom: 1px solid #E7E9FC;
       box-shadow:0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08); 
     }
-     
-      .section {
-
-          padding-top: 120px;
-          padding-bottom: 120px ; 
-     }
 
     .header-conteiner {
       display: flex;
@@ -245,7 +239,7 @@ fill:#f4f4fd;
       padding: 17px 0 ;
     }
   
-    .logo-part {
+    .logos-part  {
       color: #2E2F42; 
     } 
   
@@ -781,10 +775,6 @@ color:#434455  ;
   }
   .container-ground {
  display: flex;
-
- 
- 
- 
   }
   @media screen and (max-width:767px){
     .container-ground{
@@ -792,21 +782,10 @@ color:#434455  ;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
-    }
-    
+    } 
   }
-  @media screen and (min-width:768px){
-    .cobtainer-ground{
-      flex-direction: column;
-      flex-wrap: wrap;
-      max-width: 768px;
+  
       
-      
-      
-   
-    }
-      
-  }
   @media screen and (min-width:1158px){
     .cobtainer-ground{
       
@@ -845,27 +824,7 @@ color:#434455  ;
   .ground-logo {
     display: flex;
     margin-bottom: 16px; 
-    
-    
-  }
-  @media screen and (max-width:767px){
-    .ground-logo{
-      justify-content: center;
-  }}
-
-  @media screen and (min-width:768px){
-    .ground-logo{
-      display: inline-block;
-      margin-left: 108px;
-    margin-bottom: 16px;  
-    }}
-    @media screen and (min-width:1158px){
-      .ground-logo{
-        display: inline-block;
-      margin-bottom: 16px;  
-      }
-    }
-
+      justify-content: center;}
 
   .logo-part {
     color: #F4F4FD;
@@ -885,52 +844,19 @@ color:#434455  ;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
-  @media screen and (max-width:767px){
-    .social-list-ground {
-      argin-bottom: 72px;
+  margin-bottom: 72px;
     }
-m
-  }
-  @media screen and (min-width:768px) {
-    .social-list-ground {
-      margin-top: 96px;
-      margin-right: 164px;
-      
-  }
-  }
-  @media screen and (min-width:1158px){
-    .social-list-ground {
-     
-  }}
+  
   .social-list {
 display: flex;
 gap: 16px;
 width: 208px;
 height: 40px;
-
-  }
-  @media screen and (max-width:767px){
-    .social-list {
-      justify-content: center;
+margin-bottom: 72px;
+justify-content: center;
 align-items: center;
   }
 }
-  @media screen and (min-width:768px){
-    .social-list{
-      display: flex;
-gap: 16px;
-width: 208px;
-height: 40px;
-  }}
-
-  @media screen and (min-width:1158px) {
-    .social-list {
-    display: flex;
-gap: 16px;
-width: 208px;
-height: 40px;
-  }}
 
   .social-list-item {
     
@@ -969,33 +895,12 @@ margin-bottom: 16px;
 background-color: #31d0aa;
 }
 
-.subscribe{
-  
-  
-}
-@media screen and (max-width:767px){
   .subscribe {
     display: flex;
-    
   margin: 0 auto;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}}
-@media screen and (min-width:768px){
-  .subscribe {
-    flex-direction: column;
-    margin-bottom: 96px;
-     margin-left: 108px;
-    margin-right: 207px;
-  }
-}
-
-@media screen and (min-width:1158px){
-  .subscribe {
-    margin-left: 80px;
-   
-  }
 }
 .subscribe-text {
   margin-bottom: 16px;
@@ -1005,7 +910,6 @@ background-color: #31d0aa;
   letter-spacing: 0.02em;
   color: #fff;
 }
-
 .subscribe-input {
   border: 1px solid #fff;
   border-radius: 4px;
@@ -1060,12 +964,40 @@ background-color: #31d0aa;
 @media screen and (min-width:768px){
   .subscribe-form {
     display: flex;
-    gap: 24px;}}
+    gap: 24px;
+    max-width: 584px;
+  width: calc((100%-24px) /2 );}
+  .subscribe {
+    flex-direction: column;
+    margin-bottom: 96px;
+     margin-left: 108px;
+    margin-right: 207px;
+  }
+  .social-list{
+    display: flex;
+gap: 16px;
+width: 208px;
+height: 40px;
+  }
+  .social-list-ground {
+    margin-top: 96px;
+    margin-right: 164px;}
+}
+
 
 @media screen and (min-width:1158px) {
   .subscribe-form {
     display: flex;
-    gap: 24px;}}
+    gap: 24px;}
+    .subscribe {
+      margin-left: 80px;
+  }
+  .social-list {
+    display: flex;
+gap: 16px;
+width: 208px;
+height: 40px;
+}}
 
 
 
@@ -1276,7 +1208,7 @@ color: #8e8f99;
     fill: transparent;
     cursor:pointer;
   }
-  ..review-form-checkbox-label {
+  .review-form-checkbox-label {
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
