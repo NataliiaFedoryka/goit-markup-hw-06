@@ -776,6 +776,7 @@ color:#434455  ;
   }
   .container-ground {
  flex-wrap: wrap;
+ align-items: center;
   }
   .logo-text {
  text-align: center;
@@ -798,7 +799,7 @@ color:#434455  ;
   .social-list-ground {
     display: inline-block;
     align-items: center;
-    margin-bottom: 72px auto;
+    margin: 72px 40px;
     }
 
 
