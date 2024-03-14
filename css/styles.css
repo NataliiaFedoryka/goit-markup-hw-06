@@ -554,12 +554,12 @@ padding: 96px 0;
     display:flex ;
     flex-direction: column;
     gap: 72px; 
+    max-width: 264px;
+    justify-content: center;
     align-items: center;
-
   }
   .our-team-item {
-    
-   max-width: f;
+     max-width: 264px;
      background-color: #FFFFFF ;
      border-radius: 0px 0px 4px 4px; 
      box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -571,10 +571,10 @@ padding: 96px 0;
     padding-top: 32px;
     padding-bottom: 32px;
    border-radius: 0px, 0px, 4px, 4px;
+   display: flex;
+   flex-direction: column;
    text-align: center;
    justify-content: center;
-  
-   
    
   }
   .sect-our-team-title {
@@ -586,9 +586,6 @@ text-transform: capitalize;
 color: #2E2F42;
 text-align: center;
 margin-bottom: 72px ;
-
-
-
   }
   .member-name {
 font-weight: 500;
@@ -597,19 +594,24 @@ line-height: 1.2;
 letter-spacing: 0.02em;
 color: #2E2F42;
 margin-bottom: 8px;
+width: 264px;
+text-align: center;
   }
 .our-team--member-profesion {
 color: #434455 ;
 font-weight: 400;
 font-size: 16px;
 line-height: 1.5;
-letter-spacing: 0.02em;}
+letter-spacing: 0.02em;
+max-width: 264px ;
+text-align: center;}
 
 .our-team-icon-list {
 display: flex ;
 flex-direction: row;
 gap: 24px;
 justify-content: center;
+align-items: center;
 margin-top: 8px;
 }
 .team-list-img {
@@ -622,9 +624,9 @@ height: 40px;
 align-items: center; 
   }
   .our-teams-icons-links {
-background-color: #4D5AE5;
-border-radius: 50%;
-fill: #F4F4FD;
+  background-color: #4D5AE5;
+  border-radius: 50%;
+   fill: #F4F4FD;
   display: flex;
   justify-content: center;
   align-items: center; 
@@ -653,7 +655,7 @@ padding: 98px 106px;
       flex-direction: row;
       flex-wrap:wrap;
      max-width: 736px;
-    gap: 24px;
+     gap: 24px;
      row-gap: 64px;
     }  
   }
@@ -1031,12 +1033,6 @@ height: 40px;
 }.ground-text {
 width: 264px;
   }}
-
-
-
-
-
-
 
 /* Backdrop styles */
 .backdrop-container {
