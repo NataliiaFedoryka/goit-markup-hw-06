@@ -778,22 +778,14 @@ color:#434455  ;
  display: flex;
  align-items: baseline;
   }
- 
-
   .logo-text {
  text-align: center;
- 
-
   }
- 
   .ground-logo {
-    display: flex;
     margin-bottom: 16px; 
-    justify-content: center;}
-
+;}
   .logo-part {
     color: #F4F4FD;
-  
   }
   .ground-text {
     color: #F4F4FD;
@@ -801,7 +793,7 @@ color:#434455  ;
     font-size: 16px;
     line-height: 1.5;
      letter-spacing: 0.02em;  
-    max-width: 264px ;
+    max-width: 288px ;
     text-align: left;
   }
   .social-list-ground {
@@ -809,7 +801,17 @@ color:#434455  ;
     align-items: center;
     margin-bottom: 72px auto;
     }
-  
+  .social-list-title {
+font-family: var(--font-family);
+font-weight: 500;
+font-size: 16px;
+line-height: 24px; 
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: #FFFFFF;
+margin-bottom: 16px;
+text-align: center;
+  }
   .social-list {
 display: flex;
 gap: 16px;
@@ -825,18 +827,7 @@ gap: 16px;
     fill: #f4f4fd;
     
   }
-  .social-list-title {
-font-family: var(--font-family);
-font-weight: 500;
-font-size: 16px;
-line-height: 24px; 
-line-height: 1.5;
-letter-spacing: 0.02em;
-color: #FFFFFF;
-margin-bottom: 16px;
-text-align: center;
-
-  }
+  
   
 .social-list-link {
   fill: #F4F4FD;
@@ -855,11 +846,11 @@ background-color: #31d0aa;
 }
 
   .subscribe {
-    display: flex;
-  margin: 0 auto;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  /* display: flex; */
+  /* margin: 0 auto; */
+  /* flex-direction: column; */
+  /* justify-content: center; */
+  /* align-items: center; */
 }
 .subscribe-text {
   margin-bottom: 16px;
@@ -934,8 +925,16 @@ background-color: #31d0aa;
 
   .logo-text {
     text-align: left;}
+
+    .social-list-title{
+      text-align: left;
+    }
+
     .subscribe-text {
       text-align: left;
+    }
+    .subscribe-form {
+      flex-wrap: nowrap;
     }
 }
 
@@ -945,14 +944,25 @@ background-color: #31d0aa;
     gap: 24px;}
 
     .subscribe {
-      margin-left: 80px;
+      margin-left: auto;
   }
+  .subscribe-text{
+    margin-left: 79px;
+  }
+
+  .subscribe-form {
+  display: flex;
+  gap:24px;
+  justify-content: space-between;}
+
   .social-list {
 display: flex;
 gap: 16px;
 width: 208px;
 height: 40px;
-}}
+}.ground-text {
+width: 264px;
+  }}
 
 
 
