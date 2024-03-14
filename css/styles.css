@@ -919,12 +919,18 @@ background-color: #31d0aa;
 
 @media screen and (min-width:768px){
   .container-ground {
-    padding-left: 108px;
+    padding: 0 16px 0 108px;
     row-gap: 72px;
     gap: 24px;
+    margin: 0 128px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
   }
   .logo-text {
-    text-align: left;}
+    text-align: left;
+    width: 288px;
+  }
 
     .social-list-title{
       text-align: left;
@@ -935,9 +941,12 @@ background-color: #31d0aa;
     }
     .subscribe-form {
       flex-wrap: nowrap;
+      width: 453px;
     }
+    .ground-logo {
+      margin-bottom: 15px; 
 }
-
+}
 @media screen and (min-width:1158px) {
   .graund {
     display: block;
@@ -955,7 +964,9 @@ background-color: #31d0aa;
     gap: 24px;
     
   }
-
+  .ground-logo {
+    margin-bottom: 16px; }
+    
     .subscribe {
       margin-left: auto;
       
