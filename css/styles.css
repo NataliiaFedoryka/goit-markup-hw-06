@@ -769,62 +769,27 @@ color:#434455  ;
 
   /* footer */
   .ground{
-    padding: 100px 0;
+    display: block;
+    padding: 96px 0;
     background-color: #2E2F42;
     
   }
   .container-ground {
  display: flex;
+ align-items: baseline;
   }
-  @media screen and (max-width:767px){
-    .container-ground{
-    align-items: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    } 
-  }
-  
-      
-  @media screen and (min-width:1158px){
-    .cobtainer-ground{
-      
-      align-items: baseline;
-      }
-  }
+ 
 
   .logo-text {
- display: table-column;
- align-items: center;
- justify-content: center;
+ text-align: center;
  
 
   }
-
-  @media screen and (max-width:767px) {
-    .logo-text{
-      margin-bottom: 72px;
-  }}
-  @media screen and (min-width:768px){
-    .logo-text {
-    margin-top: 96px;
-    margin-right: 24px;
-    }
-    
-    
-  }
-  @media screen and (min-width:1158px){
-    .logo-text{
-      margin-right: 120px;
-      
-    }
-    
-  }
-    
+ 
   .ground-logo {
     display: flex;
     margin-bottom: 16px; 
-      justify-content: center;}
+    justify-content: center;}
 
   .logo-part {
     color: #F4F4FD;
@@ -837,26 +802,19 @@ color:#434455  ;
     line-height: 1.5;
      letter-spacing: 0.02em;  
     max-width: 264px ;
+    text-align: left;
   }
   .social-list-ground {
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    display: inline-block;
     align-items: center;
-  margin-bottom: 72px;
+    margin-bottom: 72px auto;
     }
   
   .social-list {
 display: flex;
 gap: 16px;
-width: 208px;
-height: 40px;
-margin-bottom: 72px;
-justify-content: center;
-align-items: center;
   }
-}
+
 
   .social-list-item {
     
@@ -876,6 +834,7 @@ line-height: 1.5;
 letter-spacing: 0.02em;
 color: #FFFFFF;
 margin-bottom: 16px;
+text-align: center;
 
   }
   
@@ -909,6 +868,7 @@ background-color: #31d0aa;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #fff;
+  text-align: center;
 }
 .subscribe-input {
   border: 1px solid #fff;
@@ -950,54 +910,53 @@ background-color: #31d0aa;
 
 .subscribe-form {
   display: flex;
-  gap: 24px;
-  
+  flex-wrap: wrap;
+  gap: 16px;
 }
-@media screen and (max-width:767px){
+
   .subscribe-form {
   flex-direction: column;
   justify-content: center;
   align-items: center;
   }
   
-}
-@media screen and (min-width:768px){
-  .subscribe-form {
-    display: flex;
-    gap: 24px;
-    max-width: 584px;
-  width: calc((100%-24px) /2 );}
-  .subscribe {
-    flex-direction: column;
-    margin-bottom: 96px;
-     margin-left: 108px;
-    margin-right: 207px;
-  }
-  .social-list{
-    display: flex;
-gap: 16px;
-width: 208px;
-height: 40px;
-  }
-  .social-list-ground {
-    margin-top: 96px;
-    margin-right: 164px;}
-}
+  @media screen and (manx-width:767px){
+    .container-ground {
+      flex-wrap: wrap;}}
 
+@media screen and (min-width:768px){
+  .container-ground {
+    padding-left: 108px;
+    row-gap: 72px;
+    gap: 24px;
+    
+  }
+
+  .logo-text {
+    text-align: left;}
+    .subscribe-text {
+      text-align: left;
+    }
+}
 
 @media screen and (min-width:1158px) {
   .subscribe-form {
     display: flex;
     gap: 24px;}
+
     .subscribe {
       margin-left: 80px;
   }
   .social-list {
-    display: flex;
+display: flex;
 gap: 16px;
 width: 208px;
 height: 40px;
 }}
+
+
+
+
 
 
 
