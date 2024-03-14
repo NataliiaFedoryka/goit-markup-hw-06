@@ -347,6 +347,10 @@ fill:#f4f4fd;
     background-size: cover;
     padding: 72px 0;
     margin: 0 auto;
+   
+}
+.container-hero {
+  
 }
 @media only screen and (min-resolution:192dpi) and (max-width:767px) { 
   .hero {
@@ -546,15 +550,12 @@ letter-spacing: 0.02em;
   }
   .our-team-list {
     display: flex;
-   flex-wrap: wrap;
-    gap: 24px; 
+   align-items: center;
+    gap: 72px; 
     flex-direction: column;  
   }
   .our-team-item {
-  justify-self: center;
-  align-items: center;
-   max-width: 264px;
-    width: calc((100% - 72px)/4);
+    max-width: 264px;
      background-color: #FFFFFF ;
      border-radius: 0px 0px 4px 4px; 
      box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -631,20 +632,23 @@ fill: #F4F4FD;
   
     fill:#f4f4fd;
   }
-  @media screen and (max-width:767px){
-
-  }
+  
   @media screen and (min-width:768px){
 
     .our-team-list {
     flex-direction: row;
-     row-gap: 64px;}
+    /* max-width: 736px;
+    gap: 24px;
+     row-gap: 24px; */
+     
+  }
     .our-team-item {
-      width: calc((100% - 72px)/2);
+      width: calc((100% - 72px) / 2);
   }
   }
   @media screen and (min-width:1158px){
 .our-team-item {
+   
     width: calc((100% - 72px)/4);
   }
   }
@@ -848,11 +852,7 @@ background-color: #31d0aa;
 }
 
   .subscribe {
-  /* display: flex; */
-  /* margin: 0 auto; */
-  /* flex-direction: column; */
-  /* justify-content: center; */
-  /* align-items: center; */
+  
 }
 .subscribe-text {
   margin-bottom: 16px;
@@ -926,6 +926,7 @@ background-color: #31d0aa;
     display: flex;
     flex-wrap: wrap;
     align-items: baseline;
+   
   }
   .logo-text {
     text-align: left;
@@ -940,6 +941,8 @@ background-color: #31d0aa;
       text-align: left;
     }
     .subscribe-form {
+      display: flex;
+      flex-direction: row;
       flex-wrap: nowrap;
       width: 453px;
     }
@@ -966,7 +969,7 @@ background-color: #31d0aa;
   }
   .ground-logo {
     margin-bottom: 16px; }
-    
+
     .subscribe {
       margin-left: auto;
       
