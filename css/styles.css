@@ -775,8 +775,7 @@ color:#434455  ;
     
   }
   .container-ground {
- display: flex;
- align-items: baseline;
+ flex-wrap: wrap;
   }
   .logo-text {
  text-align: center;
@@ -801,6 +800,8 @@ color:#434455  ;
     align-items: center;
     margin-bottom: 72px auto;
     }
+
+
   .social-list-title {
 font-family: var(--font-family);
 font-weight: 500;
@@ -920,9 +921,7 @@ background-color: #31d0aa;
     padding-left: 108px;
     row-gap: 72px;
     gap: 24px;
-    
   }
-
   .logo-text {
     text-align: left;}
 
@@ -939,12 +938,26 @@ background-color: #31d0aa;
 }
 
 @media screen and (min-width:1158px) {
+  .graund {
+    display: block;
+    padding: 100px 0;
+  }
+  .container-ground{
+    display: flex;
+    align-items: baseline;
+    margin-right: 0 140px;
+    padding: 0 15px 0 108px;
+    margin: 71px;
+  }
   .subscribe-form {
     display: flex;
-    gap: 24px;}
+    gap: 24px;
+    
+  }
 
     .subscribe {
       margin-left: auto;
+      
   }
   .subscribe-text{
     margin-left: 79px;
