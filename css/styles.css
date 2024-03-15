@@ -75,6 +75,7 @@ body {
   }
    .mobile-menu-container {
    position: relative;
+   max-width: 408px;
    }
 
    .mobile-menu-close-btn {
@@ -126,7 +127,10 @@ body {
     position: relative;
   }
   .mobile-address-list {
-  gap: 24 px;
+
+    display: flex;
+    flex-direction: column;
+  row-gap: 24px;
   }
   
 
@@ -150,6 +154,7 @@ body {
   }
   .mobile-address-link-tel {
     color: #4D5AE5;
+    padding-bottom: 24px;
   
   }
 
@@ -190,6 +195,13 @@ fill:#f4f4fd;
 
 
   @media screen and (min-width:768px){
+    .mobile-menu-container {
+      max-width: 408px;
+    }
+ 
+  }
+
+  @media screen and (min-width:1158px) {
 
   }
 
