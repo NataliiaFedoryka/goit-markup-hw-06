@@ -86,23 +86,10 @@ body {
    }
 
    .mobile-menu-close-btn {
-    /* position: absolute; 
-    right: 16px;
-    background-color:transparent  ;
-    border: none;
-    padding: 0;
-    fill: #2E2F42;
-    line-height: 0;
-    border-radius: 100%;
-    border-color: #E7E9FC;
-    fill: var(--cornflower);
-    stroke-width: 1px;
-   stroke: var(--navy-blue);
-    top: 24px;*/
-
+    
   position: absolute;
    top:24px;
-   right:24px;
+   right:0px;
    border-radius: 50%;
   width: 24px;
   height: 24px;
@@ -222,18 +209,18 @@ fill:#f4f4fd;
   }
   .mobile-menu-icons-links:focus {
      background-color: #404bbf;
-  } }
+  } 
 
   @media screen and (min-width:768px) {
-
+ .mobile-menu{
+   display: none; 
   }
-   .mobile-menu{
-display: none;
   }
+  
 
 @media screen and (min-width:1158px){
   .mobile-menu{
-display: none;
+  display: none;
   }
 }
   /* MOBILE MENU STYLES */
