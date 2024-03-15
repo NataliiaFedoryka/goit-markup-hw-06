@@ -832,12 +832,15 @@ color:#434455  ;
   }
    
   @media screen and (min-width:1158px){
+
     .our-portfolio-list {
       display: flex;
+      flex-direction: row;
       flex-wrap: wrap;
       gap: 24px;
      max-width: 1128px;
       row-gap: 40px;
+     
     }
     .our-portfolio-item {
       max-width: 360px;
@@ -852,10 +855,8 @@ color:#434455  ;
         .our-portfolio-item:hover {
           transform: translateY(0%);
           box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08); 
-        }
 
-
-  }
+  }}
 
 
 
