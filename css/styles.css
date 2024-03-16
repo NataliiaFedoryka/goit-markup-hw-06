@@ -37,7 +37,7 @@ body {
     
     .container {
     max-width: 320px;
-    padding: 0 16px;
+    padding: 0 15px;
     margin:0 auto;
     }
     
@@ -80,7 +80,7 @@ body {
     flex-direction: column;
     height: 100%;
    position: relative;
-   max-width: 288px;
+   max-width: 320pxpx;
    padding-top: 72px;
    padding-bottom: 40px;
    }
@@ -114,6 +114,7 @@ body {
     margin-bottom: auto;
    }
    .mobile-menu-nav {
+    margin-bottom: 148px;
   
    
    
@@ -121,7 +122,7 @@ body {
    .nav-link-mobile {
     position: relative;
     color: #2e2f42 ;
-    margin: 24px 0 ;
+    margin: 0;
     display: block;
     font-family: var(--font-family);
     font-weight: 700;
@@ -175,7 +176,12 @@ body {
     
   
   }
-
+  .mob-menu-nav-item-studio   {
+    margin-bottom: 40px;
+  }
+  .mob-menu-nav-item-portfolio {
+    margin-bottom: 40px;
+  }
   .mobile-menu-icon-list{
     display: flex;
     position: relative;
@@ -187,6 +193,7 @@ height: 40px;
   .mobile-menu-icons{
 width: 40px;
 height: 40px;
+
   }
  .mobile-menu-icons-links {
 background-color: #4D5AE5;
@@ -447,7 +454,7 @@ fill:#f4f4fd;
   @media screen and (min-width:768px) {
     .hero {
       padding-top: 112px;
-      padding-bottom: 36px ;
+      padding-bottom: 112px ;
       min-width: 768px;
       background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-tablet.jpg);
     }
@@ -469,7 +476,7 @@ fill:#f4f4fd;
    .hero {
     padding-top:188px ;
     padding-bottom: 188px;
-    max-width: 1158px;
+    max-width: 1440px;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero.jpg);
    }
    .hero-image-name {
@@ -532,8 +539,7 @@ letter-spacing: 0.02em;
       flex-direction: row;
       justify-content: center; 
      align-items: center; 
-      row-gap: 72px;
-      gap: 24px;
+      gap: 72px 24px;
      
     }
     .benefit-name {
@@ -611,6 +617,7 @@ padding: 96px 0;
     margin: 0 auto;
   }
   .our-team-item {
+    width: 264px;
      background-color: #F4F4FD ;
      border-radius: 0px 0px 4px 4px; 
      box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -618,8 +625,6 @@ padding: 96px 0;
   .our-team-container-discription {
     width: 264px ;
     background-color: #ffffff ;
-    border: 1px solid #e7e9fc;
-    border-top: none;
     padding-top: 32px;
     padding-bottom: 32px;
    border-radius: 0px, 0px, 4px, 4px;
@@ -714,12 +719,18 @@ height: 40px;
     }  
   }
     .our-team-item {
-      width: calc((100% - 24px) / 2);
+      /* width: calc((100% - 24px) / 2); */
+      width: 264px;
       align-items: center;
   }
   
   @media screen and (min-width:1158px){
+    .sect-our-team {
+      padding: 120px 0;
+    }
+
     .container-our-team {
+      width: 1158px;
       padding: 0 15px;
     }
     .our-team-list{
@@ -843,13 +854,15 @@ color:#434455  ;
      
     }
     .our-portfolio-item {
-      max-width: 360px;
-      width: calc((100% - 48px)/3)
+      /* max-width: 360px; */
+     
     }
 
     .our-portfolio-item {
-      width: 100%;
-      transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);}
+      width: calc((100% - 48px) / 3);
+      box-shadow: none;
+      transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
       
       
         .our-portfolio-item:hover {
@@ -1025,6 +1038,9 @@ background-color: #31d0aa;
     
    
   }
+  .subscribe-input {
+    width: 264px;
+  }
   .logo-text {
     text-align: left;
     width: 288px;
@@ -1045,7 +1061,7 @@ background-color: #31d0aa;
       align-items: baseline;
       flex-direction: row  ;
       flex-wrap: nowrap;
-      max-width: 453px;
+      /* max-width: 453px; */
       align-items: flex-start;
     }
     .ground-logo {
@@ -1293,6 +1309,7 @@ color: #8e8f99;
   border: 1px solid var(--navy-blue-modal);
 }
 .review-form-own-checkbox { 
+  flex-shrink: 0;
   display: inline-flex;
   justify-content: center;
   align-items: center;
